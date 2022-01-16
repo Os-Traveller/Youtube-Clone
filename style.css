@@ -1,0 +1,141 @@
+/* ======================================================================= */
+/* In this Project, I am Tring to make a clone of youtube.  */
+/* In order to do so. I am going to do it slowly slowly,  */
+/* Be here with me and have fun.  */
+/* ======================================================================= */
+
+/* ========================= */
+/* Imports */
+/* ========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Moon+Dance&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+/* ========================= */
+/* Variable */
+/* ==========================*/
+:root {
+  --bg: #202020;
+  --icon-size: 3rem;
+  --icon-small:2rem;
+  --bg-black-dark: #323232;
+  --search-bar-height: 40px;
+  --clr-black: #121212;
+}
+/* ========================= */
+/* Base */
+/* ==========================*/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;  
+}
+body {
+  width: 100%;
+  background-color:var(--bg);
+  margin-bottom:2rem;
+}
+
+/* --- Default Icon size --- */
+ 
+/* ========================= */
+/* Layout */
+/* ========================= */
+/* ---- Header ---- */
+header {
+  width: 100%;
+  padding: 2rem 5rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+/* ---- Logo_Menu ---- */
+.logo_menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem
+}
+.three_line_menu div {
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+}
+.three_line_menu div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.fa-youtube {
+  font-size: var(--icon-size);
+  color: #fff;
+}
+.fa-youtube span {
+  font-family: 'Oswald', sans-serif;
+}
+/* ---- Search_Bar ---- */
+input {
+  height: var(--search-bar-height);
+  width: 550px;
+  background-color: #121212;
+  border: none;
+  box-shadow: 0 0 1px 1px rgba(255,255,255,0.15);
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+}
+.search_bar form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.search_icon {
+  background-color: var(--bg-black-dark);
+  height: var(--search-bar-height);
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mic_icon {
+  height: var(--search-bar-height);
+  width: var(--search-bar-height);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--clr-black);
+  margin-left: 1rem;
+}
+.fa-search {
+  font-size: var(--icon-small);
+  color: #fff;
+} 
+.fa-microphone {
+  font-size: var(--icon-small);
+  color: #fff;
+}
+/* ---- Account_Option ---- */
+.account_option {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.account_option img {
+  width: var(--search-bar-height);
+  height: var(--search-bar-height);
+  border-radius: 50%;
+}
+.fa-video , 
+.fa-th,
+.fa-bell {
+  font-size: var(--icon-small);
+  color: #fff;
+}
